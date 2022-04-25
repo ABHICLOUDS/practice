@@ -1,0 +1,37 @@
+pipeline {
+       agent any     
+               stages {          
+                       stage ("Git-pull") { 
+    steps    {
+               echo "welcome to world"
+               sh ‘env’        
+               }
+    }
+    •   
+                       stage('App-Build') { 
+   steps {
+                     echo "second stage of build"
+   }
+   }
+                        stage('Dev-Deploy') { 
+   steps {
+                    echo " deploy on web server-Dev " 
+             
+   }
+   }
+                 stage('Test-Deploy') { 
+       steps {
+                    echo "deploy on web server-test" 
+             
+   }
+   }
+              stage('Prod-Deploy') { 
+          steps {
+            echo "deploy on web server-prod"
+           
+
+   }
+   }
+
+    }
+    }
