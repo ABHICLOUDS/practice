@@ -4,6 +4,7 @@ pipeline {
                        stage ("Git-pull") { 
     steps    {
                echo "welcome to world"
+               echo "welcome to cloudblitz"
                        
                }
     }
