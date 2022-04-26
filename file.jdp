@@ -7,7 +7,7 @@ pipeline {
                sh ‘env’        
                }
     }
-    •   
+       
                        stage('App-Build') { 
    steps {
                      echo "second stage of build"
